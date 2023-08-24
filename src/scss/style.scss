@@ -1,0 +1,149 @@
+// color-variables
+$dark-color: #262626;
+$light-color: #e6e3e392;
+$nav-color: #bdbdbd65;
+$nav-item-color: #969696;
+$primary-color: rgb(54, 112, 228);
+// font variables
+$font-path: "font";
+$font-family: Vazir-md;
+$font-weight: 700;
+$font-style: "normal";
+$default-font-size-nav: 18px;
+$default-font-size-p: 16px;
+$default-font-size-h1: 24px;
+$default-font-size-h4: 20px;
+$default-font-size-h6: 14px;
+$default-font-size-span: 16px;
+// variables for mobile phone
+$default-font-size-mob-nav: 14px;
+$default-font-size-mob-p: 14px;
+$default-font-size-mob-h1: 19px;
+$default-font-size-mob-h4: 16px;
+$default-font-size-mob-h6: 12px;
+$default-font-size-mob-span: 14px;
+// minxins
+@mixin flex($flex: flex, $position-x: center, $position-y: center) {
+  display: $flex;
+  justify-content: $position-x;
+  align-items: $position-y;
+}
+@mixin margin-padding($top, $right, $bottom, $left, $margin: true) {
+  @if ($margin) {
+    margin: $top $right $bottom $left;
+  } @else {
+    padding: $top $right $bottom $left;
+  }
+}
+@font-face {
+  font-family: $font-family;
+  src: url(../../dist/assest/font/Vazir-Medium.woff) format("woff"),
+    url(../../dist/assest/font/Vazir-Medium.eot) format("eot"),
+    url(../font/Vazir-Medium.woff2) format("woff2");
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+* {
+  font-family: $font-family;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-family;
+  background-color: $light-color !important;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+// nav-bar-style
+.container-fluid {
+  background-color: $nav-color !important;
+}
+.custom-nav-bar {
+  .row {
+    @media screen and (max-width: 992px) {
+      div.web-title {
+        display: none !important;
+      }
+    }
+    .custom-menu {
+      nav {
+        button {
+          border: none;
+          outline: none;
+          &:focus {
+            box-shadow: none;
+            outline: none;
+            border: none;
+          }
+        }
+        div {
+          ul.navbar-nav {
+            @include flex(flex, space-between, center);
+
+            li.nav-item {
+              // add-animation-hover-style
+              position: relative;
+              &::after {
+                content: "";
+                width: 0px;
+                height: 2px;
+                background-color: $dark-color;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                transition: width 0.5s ease;
+              }
+              &::before {
+                content: "";
+                width: 0px;
+                height: 2px;
+                background-color: $dark-color;
+                position: absolute;
+                bottom: 0px;
+                right: 0;
+                transition: width 0.5s ease;
+              }
+              &:hover::after {
+                width: 50% !important;
+                left: 50%;
+              }
+              &:hover::before {
+                width: 50% !important;
+                right: 50%;
+              }
+              a.nav-link {
+                transition: all 0.4s ease;
+                color: $nav-item-color;
+                &:hover {
+                  color: $dark-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+li.social-media {
+  span {
+    a {
+      i {
+        transition: all 0.4s ease !important;
+        color: $nav-item-color !important;
+        &:hover {
+          color: $dark-color !important;
+        }
+      }
+    }
+  }
+}
