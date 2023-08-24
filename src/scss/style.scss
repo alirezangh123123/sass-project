@@ -16,12 +16,26 @@ $default-font-size-h4: 20px;
 $default-font-size-h6: 14px;
 $default-font-size-span: 16px;
 // variables for mobile phone
-$default-font-size-mob-nav: 14px;
-$default-font-size-mob-p: 14px;
-$default-font-size-mob-h1: 19px;
-$default-font-size-mob-h4: 16px;
-$default-font-size-mob-h6: 12px;
-$default-font-size-mob-span: 14px;
+$default-font-size-tablet-nav: 14px;
+$default-font-size-tablet-p: 16px;
+$default-font-size-tablet-h1: 35px;
+$default-font-size-tablet-h4: 25px;
+$default-font-size-tablet-h6: 19px;
+$default-font-size-tablet-span: 16px;
+// variables for mobile phone
+$default-font-size-lg-mob-nav: 14px;
+$default-font-size-lg-mob-p: 16px;
+$default-font-size-lg-mob-h1: 25px;
+$default-font-size-lg-mob-h4: 20px;
+$default-font-size-lg-mob-h6: 17px;
+$default-font-size-lg-mob-span: 16px;
+// variables for sm mobile phone
+$default-font-size-sm-mob-nav: 12px;
+$default-font-size-sm-mob-p: 14px;
+$default-font-size-sm-mob-h1: 20px;
+$default-font-size-sm-mob-h4: 16px;
+$default-font-size-sm-mob-h6: 15px;
+$default-font-size-sm-mob-span: 14px;
 // minxins
 @mixin flex($flex: flex, $position-x: center, $position-y: center) {
   display: $flex;
@@ -52,7 +66,7 @@ $default-font-size-mob-span: 14px;
 }
 body {
   font-family: $font-family;
-  background-color: $light-color !important;
+  // background-color: $light-color !important;
 }
 ul,
 ol,
@@ -144,6 +158,147 @@ li.social-media {
           color: $dark-color !important;
         }
       }
+    }
+  }
+}
+// start-header-style
+header {
+  .container {
+    .side-wrapper {
+      .right-side-header {
+        .sq-1 {
+          position: absolute;
+          top: 0px;
+          right: 130px;
+          width: 25px;
+          height: 25px;
+          border: 4px solid #c8c8c8;
+          animation: sq-1 7s infinite reverse linear;
+        }
+        @keyframes sq-1 {
+          100%{
+            transform: rotate(-360deg);
+          }
+        }
+        .sq-2 {
+          position: absolute;
+          top: 120px;
+          left:20px;
+          width: 25px;
+          height: 25px;
+          border: 4px solid #888888;
+          animation: sq-2 7s infinite reverse linear;
+        }
+        @keyframes sq-2 {
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        .sq-3 {
+          position: absolute;
+          bottom: 0px;
+          right:120px;
+          width: 20px;
+          height: 20px;
+          border: 4px solid #e11616;
+          animation: sq-3 7s infinite reverse linear;
+        }
+        @keyframes sq-3{
+          100%{
+            transform: rotate(-360deg);
+          }
+        }
+        .gear-wrapper {
+          i.gear-2 {
+            position: absolute !important;
+            top: 18px !important;
+            right: 30px !important;
+            font-size: 30px !important;
+            animation: gear-2 14s infinite reverse linear;
+          }
+          @keyframes gear-2 {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          i.gear-1 {
+            font-size: 18px !important;
+            animation: gear-1 11s infinite linear;
+          }
+          @keyframes gear-1 {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+    // add-media-query-for-res-font-size
+    @media screen and (max-width: 1200px) {
+      .side-wrapper {
+        .left-side-header {
+          .header-title {
+            h1 {
+              font-size: $default-font-size-tablet-h1 !important;
+            }
+            p {
+              font-size: $default-font-size-tablet-p !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .side-wrapper {
+        .left-side-header {
+          .header-title {
+            h1 {
+              font-size: $default-font-size-lg-mob-h1 !important;
+            }
+            p {
+              font-size: $default-font-size-lg-mob-p !important;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .side-wrapper {
+        .left-side-header {
+          .header-title {
+            h1 {
+              font-size: $default-font-size-lg-mob-h1 !important;
+              margin-right: 0px !important;
+              padding-left: 107px;
+            }
+            p {
+              font-size: $default-font-size-lg-mob-p !important;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 576px) {
+      .side-wrapper {
+        .left-side-header {
+          .header-title {
+            h1 {
+              font-size: $default-font-size-sm-mob-h1 !important;
+              margin-right: 0px !important;
+              padding-left: 107px;
+            }
+            p {
+              font-size: $default-font-size-sm-mob-p !important;
+            }
+          }
+        }
+      }
+    }
+
+    .side-wrapper {
+      @include flex(flex, normal, center);
     }
   }
 }

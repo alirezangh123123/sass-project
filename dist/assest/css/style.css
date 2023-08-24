@@ -15,7 +15,6 @@
 
 body {
   font-family: Vazir-md;
-  background-color: rgba(230, 227, 227, 0.5725490196) !important;
 }
 
 ul,
@@ -108,4 +107,151 @@ li.social-media span a i {
 }
 li.social-media span a i:hover {
   color: #262626 !important;
+}
+
+header .container .side-wrapper .right-side-header .sq-1 {
+  position: absolute;
+  top: 0px;
+  right: 130px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #c8c8c8;
+  animation: sq-1 7s infinite reverse linear;
+}
+@-webkit-keyframes sq-1 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes sq-1 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+header .container .side-wrapper .right-side-header .sq-2 {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #888888;
+  animation: sq-2 7s infinite reverse linear;
+}
+@-webkit-keyframes sq-2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes sq-2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+header .container .side-wrapper .right-side-header .sq-3 {
+  position: absolute;
+  bottom: 0px;
+  right: 120px;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #e11616;
+  animation: sq-3 7s infinite reverse linear;
+}
+@-webkit-keyframes sq-3 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes sq-3 {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+header .container .side-wrapper .right-side-header .gear-wrapper i.gear-2 {
+  position: absolute !important;
+  top: 18px !important;
+  right: 30px !important;
+  font-size: 30px !important;
+  animation: gear-2 14s infinite reverse linear;
+}
+@-webkit-keyframes gear-2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes gear-2 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+header .container .side-wrapper .right-side-header .gear-wrapper i.gear-1 {
+  font-size: 18px !important;
+  -webkit-animation: gear-1 11s infinite linear;
+          animation: gear-1 11s infinite linear;
+}
+@-webkit-keyframes gear-1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes gear-1 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 35px !important;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 25px !important;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 25px !important;
+    margin-right: 0px !important;
+    padding-left: 107px;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 20px !important;
+    margin-right: 0px !important;
+    padding-left: 107px;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 14px !important;
+  }
+}
+header .container .side-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */
