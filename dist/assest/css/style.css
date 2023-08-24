@@ -15,7 +15,6 @@
 
 body {
   font-family: Vazir-md;
-  background-color: rgba(230, 227, 227, 0.5725490196) !important;
 }
 
 ul,
@@ -108,4 +107,52 @@ li.social-media span a i {
 }
 li.social-media span a i:hover {
   color: #262626 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 35px !important;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 25px !important;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 25px !important;
+    margin-right: 0px !important;
+    padding-left: 107px;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .container .side-wrapper .left-side-header .header-title h1 {
+    font-size: 20px !important;
+    margin-right: 0px !important;
+    padding-left: 107px;
+  }
+  header .container .side-wrapper .left-side-header .header-title p {
+    font-size: 14px !important;
+  }
+}
+header .container .side-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */
