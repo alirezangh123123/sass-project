@@ -2,8 +2,10 @@
 $dark-color: #262626;
 $light-color: #e6e3e392;
 $nav-color: #bdbdbd65;
+$gray-color: rgba(160, 156, 156, 0.676);
 $nav-item-color: #969696;
 $primary-color: rgb(54, 112, 228);
+$bg-shade: rgb(44 108 237 / 6%);
 // font variables
 $font-path: "font";
 $font-family: Vazir-md;
@@ -37,6 +39,32 @@ $default-font-size-sm-mob-h4: 16px;
 $default-font-size-sm-mob-h6: 15px;
 $default-font-size-sm-mob-span: 14px;
 // minxins
+@mixin zoom-slider {
+  transform: scale(1.04);
+}
+@mixin shadow-hover {
+  box-shadow: 0px 0px 0rem 5px rgba(0, 0, 0, 0.15) !important;
+}
+@mixin text-animate($slow-animate, $fast-animate: true) {
+  @if ($fast-animate) {
+    transition: all 0.4s ease;
+  } @else {
+    transition: all 0.8s ease;
+  }
+}
+@mixin card-text-stable {
+  text-overflow: ellipsis !important;
+  height: 55px !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+@mixin card-title-stable {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  height: 38px !important;
+}
 @mixin flex($flex: flex, $position-x: center, $position-y: center) {
   display: $flex;
   justify-content: $position-x;
@@ -74,7 +102,7 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $dark-color;
 }
 // nav-bar-style
@@ -299,6 +327,111 @@ header {
 
     .side-wrapper {
       @include flex(flex, normal, center);
+    }
+  }
+}
+// course-card-style
+main {
+  margin-top: 50px !important;
+  background-color: $bg-shade;
+  padding: 64px 0px;
+  border-radius: 0px 110px 200px 0px;
+  .card-course {
+    .row {
+      .course-wrapper {
+        .card {
+          height: auto !important;
+          @include text-animate(null, true);
+          &:hover {
+            @include shadow-hover();
+            @include zoom-slider();
+          }
+          .card-body {
+            .card-text {
+              @include card-text-stable();
+              font-size: $default-font-size-h6;
+              color: $dark-color;
+              @include text-animate(true);
+            }
+            .card-title {
+              @include card-title-stable();
+              font-size: $default-font-size-h4;
+              color: $dark-color;
+              @include text-animate(null, false);
+            }
+            .link-wrapper {
+              a {
+                background-color: $light-color;
+                &:focus {
+                  box-shadow: none !important;
+                }
+              }
+              .course-time {
+                background-color: #fff;
+                span.timer {
+                  color: $primary-color;
+                  vertical-align: -7px;
+                  background-color: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// responsive course card
+@media screen and (max-width: 576px) {
+  .link-wrapper {
+    .course-time {
+      span.timer {
+        vertical-align: -2px !important;
+        font-size: 14px !important;
+      }
+      span {
+        font-size: 14px !important;
+      }
+    }
+    a {
+      font-size: 12px !important;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card {
+    width: 100% !important;
+    .link-wrapper {
+      .course-time {
+        span.timer {
+          vertical-align: -2px !important;
+          font-size: 14px !important;
+        }
+        span {
+          font-size: 14px !important;
+        }
+      }
+      a {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .card {
+    .link-wrapper {
+      .course-time {
+        span.timer {
+          vertical-align: -2px !important;
+          font-size: 14px !important;
+        }
+        span {
+          font-size: 14px !important;
+        }
+      }
+      a {
+        font-size: 12px !important;
+      }
     }
   }
 }
