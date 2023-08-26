@@ -15,6 +15,7 @@
 
 body {
   font-family: Vazir-md;
+  overflow-x: hidden !important;
 }
 
 ul,
@@ -399,5 +400,82 @@ section.path div.container .side-wrapper {
   }
   section.path .side-wrapper .left-side-header .header-title p {
     font-size: 11px !important;
+  }
+}
+
+section.article-sec .container .row .article-wrapper .card {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 0rem 5px rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0px 0px 0rem 5px rgba(0, 0, 0, 0.15) !important;
+}
+@media screen and (max-width: 576px) {
+  section.article-sec .container .row .article-wrapper .card .card-body .card-title {
+    font-size: 20px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card-body .card-text {
+    font-size: 16px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card-body .author-wrapper span {
+    font-size: 14px;
+    padding: 18px 0 18px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  section.article-sec .container .row .article-wrapper .card .card {
+    height: auto !important;
+  }
+  section.article-sec .container .row .article-wrapper .card .card .card-body .card-title {
+    font-size: 20px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card .card-body .card-text {
+    font-size: 11px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card .card-body .author-wrapper span {
+    font-size: 10px !important;
+    padding: 18px 0 18px 0;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  section.article-sec .container .row .article-wrapper .card .card .card-body .card-title {
+    font-size: 20px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card .card-body .card-text {
+    font-size: 14px;
+  }
+  section.article-sec .container .row .article-wrapper .card .card .card-body .author-wrapper span {
+    font-size: 14px;
+    padding: 18px 0 18px 0;
+  }
+}
+section.article-sec .container .row .article-wrapper .card .card-body .card-title {
+  font-size: 20px;
+}
+section.article-sec .container .row .article-wrapper .card .card-body .card-text {
+  font-size: 14px;
+}
+section.article-sec .container .row .article-wrapper .card .card-body .author-wrapper span {
+  font-size: 10px !important;
+  padding: 18px 0 18px 0;
+}
+section.article-sec .container .row .article-wrapper .card .card-body .link-wrapper .course-time span.timer {
+  vertical-align: -3px !important;
+  font-size: 19px !important;
+}
+section.article-sec .container .row .article-wrapper .card .card-body .link-wrapper .course-time span {
+  font-size: 16px !important;
+}
+section.article-sec .container .row .article-wrapper .card .card-body .link-wrapper a {
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 425px) {
+  .custom-card-header {
+    width: unset !important;
+  }
+  .custom-card-header .img-wrapper {
+    display: none !important;
+  }
+  .card-body {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=style.css.map */
