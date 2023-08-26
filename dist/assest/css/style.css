@@ -478,4 +478,68 @@ section.article-sec .container .row .article-wrapper .card .card-body .link-wrap
   .card-body {
     width: 100% !important;
   }
+}
+footer.footer-sec {
+  background-color: #262626;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 100px !important;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper {
+  margin-top: 50px;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .nav-link {
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .nav-link:hover {
+  color: rgba(255, 234, 0, 0.8666666667);
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .nav-title {
+  margin-right: 17px !important;
+  color: rgba(255, 255, 255, 0.8196078431);
+  font-size: 14px;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .footer-address::before {
+  content: "\f3c5";
+  font-family: FontAwesome;
+  padding-left: 4px !important;
+  vertical-align: -2px !important;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .footer-phone::after {
+  content: "\f095";
+  font-family: FontAwesome;
+  padding-left: 4px !important;
+  vertical-align: -1px !important;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .footer-email::after {
+  content: "\f2b6";
+  font-family: FontAwesome;
+  padding-left: 4px !important;
+  vertical-align: 1px !important;
+}
+footer.footer-sec .container-fluid .container .row .footer-sec-wrapper nav .footer-ins::after {
+  content: "\f16d";
+  font-family: FontAwesome;
+  padding-left: 4px !important;
+  vertical-align: 1px !important;
+}
+footer.footer-sec .container-fluid .container .row .sub-wrapper {
+  margin-top: 50px !important;
+}
+footer.footer-sec .container-fluid .container .row .sub-wrapper div.sub-news {
+  margin-top: 23px;
+}
+footer.footer-sec .container-fluid .container .row .sub-wrapper div.sub-news h4 {
+  color: rgba(255, 234, 0, 0.8666666667) !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  margin-bottom: 29px !important;
+}
+footer.footer-sec .container-fluid .container .row .sub-wrapper .input-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }/*# sourceMappingURL=style.css.map */
