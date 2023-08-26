@@ -1,34 +1,3 @@
-@font-face {
-  font-family: Vazir-md;
-  src: url(../../dist/assest/font/Vazir-Medium.woff) format("woff"), url(../../dist/assest/font/Vazir-Medium.eot) format("eot"), url(../font/Vazir-Medium.woff2) format("woff2");
-  font-weight: 700;
-  font-style: "normal";
-}
-* {
-  font-family: Vazir-md;
-  direction: rtl;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: Vazir-md;
-  overflow-x: hidden !important;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none !important;
-  color: #262626;
-}
-
 .container-fluid {
   background-color: rgba(189, 189, 189, 0.3960784314) !important;
 }
@@ -542,4 +511,35 @@ footer.footer-sec .container-fluid .container .row .sub-wrapper .input-group inp
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+
+@font-face {
+  font-family: Vazir-md;
+  src: url(../../dist/assest/font/Vazir-Medium.woff) format("woff"), url(../../dist/assest/font/Vazir-Medium.eot) format("eot"), url(../font/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: "normal";
+}
+* {
+  font-family: Vazir-md;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Vazir-md;
+  overflow-x: hidden !important;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #262626;
 }/*# sourceMappingURL=style.css.map */
