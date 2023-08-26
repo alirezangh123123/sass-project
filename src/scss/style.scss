@@ -38,6 +38,15 @@ $default-font-size-sm-mob-h1: 20px;
 $default-font-size-sm-mob-h4: 16px;
 $default-font-size-sm-mob-h6: 15px;
 $default-font-size-sm-mob-span: 14px;
+// variables for x-sm mobile phone
+$default-font-size-x-sm-mob-nav: 9px;
+$default-font-size-x-sm-mob-p: 11px;
+$default-font-size-x-sm-mob-h1: 15px;
+$default-font-size-x-sm-mob-h4: 14px;
+$default-font-size-x-sm-mob-h6: 13px;
+$default-font-size-x-sm-mob-span: 11px;
+// dividers
+$m-y-divider: 200px;
 // minxins
 @mixin zoom-slider {
   transform: scale(1.04);
@@ -431,6 +440,95 @@ main {
       }
       a {
         font-size: 12px !important;
+      }
+    }
+  }
+}
+// path-style
+section.path {
+  margin-top: 170px !important;
+  div.container {
+    .side-wrapper {
+      margin-bottom: $m-y-divider !important;
+     
+    }
+  }
+  // add-media-query-for-res-font-size
+  @media screen and (max-width: 1200px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-tablet-h1 !important;
+          }
+          p {
+            font-size: $default-font-size-tablet-p !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-lg-mob-h1 !important;
+          }
+          p {
+            font-size: $default-font-size-lg-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-lg-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-lg-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-sm-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-sm-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-x-sm-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-x-sm-mob-p !important;
+          }
+        }
       }
     }
   }
