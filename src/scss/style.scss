@@ -46,7 +46,7 @@ $default-font-size-x-sm-mob-h4: 14px;
 $default-font-size-x-sm-mob-h6: 13px;
 $default-font-size-x-sm-mob-span: 11px;
 // dividers
-$m-y-divider: 40px;
+$m-y-divider: 200px;
 // minxins
 @mixin zoom-slider {
   transform: scale(1.04);
@@ -449,7 +449,8 @@ section.path {
   margin-top: 170px !important;
   div.container {
     .side-wrapper {
-      margin-bottom: $m-y-divider;
+      margin-bottom: $m-y-divider !important;
+     
     }
   }
   // add-media-query-for-res-font-size
