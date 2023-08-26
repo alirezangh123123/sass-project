@@ -1,0 +1,88 @@
+// path-style
+section.path {
+  margin-top: 170px !important;
+  div.container {
+    .side-wrapper {
+      margin-bottom: $m-y-divider !important;
+    }
+  }
+  // add-media-query-for-res-font-size
+  @media screen and (max-width: 1200px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-tablet-h1 !important;
+          }
+          p {
+            font-size: $default-font-size-tablet-p !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-lg-mob-h1 !important;
+          }
+          p {
+            font-size: $default-font-size-lg-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-lg-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-lg-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-sm-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-sm-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .side-wrapper {
+      .left-side-header {
+        .header-title {
+          h1 {
+            font-size: $default-font-size-x-sm-mob-h1 !important;
+            margin-right: 0px !important;
+            padding-left: 107px;
+          }
+          p {
+            font-size: $default-font-size-x-sm-mob-p !important;
+          }
+        }
+      }
+    }
+  }
+}
