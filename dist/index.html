@@ -23,10 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="dist/assest/css/bootstrap-rtl-min.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="dist/assest/css/style.css" />
   </head>
   <body>
@@ -86,7 +83,11 @@
     <header class="mt-4">
       <div class="container">
         <div class="row side-wrapper">
-          <div class="col-sm-12 col-md-8 right-side-header">
+          <div
+            class="col-sm-12 col-md-8 right-side-header"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
             <div class="gear-wrapper mt-3 d-flex justify-content-start">
               <i class="fas fa-cog gear-1"></i>
               <i class="fas fa-cog gear-2"></i>
@@ -97,7 +98,11 @@
             <span class="sq-2"></span>
             <span class="sq-3"></span>
           </div>
-          <div class="col-sm-12 col-md-4 left-side-header">
+          <div
+            class="col-sm-12 col-md-4 left-side-header"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
             <div class="header-title">
               <h1>وبسایت کافه آموزش</h1>
               <p>جامع ترین وبسایت برنامه نویسی و طراحی وب</p>
@@ -224,16 +229,25 @@
       </div>
     </main>
     <!-- start-stracture-path-section -->
+    <br />
     <section class="path">
       <div class="container">
         <div
           class="row side-wrapper mb-5"
           style="display: flex !important; align-items: center !important"
         >
-          <div class="col-sm-12 col-md-6 right-side-header">
+          <div
+            class="col-sm-12 col-md-6 right-side-header"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img src="dist/assest/img/path1.jpg" alt="" class="img-fluid" />
           </div>
-          <div class="col-sm-12 col-md-6 left-side-header">
+          <div
+            class="col-sm-12 col-md-6 left-side-header"
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
             <div class="header-title">
               <h1 class="rtl">صرفه جویی در زمان، با تدریس اساتید مجرب</h1>
               <p class="rtl">
@@ -249,7 +263,9 @@
           class="row side-wrapper"
           style="display: flex !important; align-items: center !important"
         >
-          <div class="col-sm-12 col-md-6 left-side-header">
+          <div class="col-sm-12 col-md-6 left-side-header"
+          data-aos="fade-up"
+          data-aos-delay="400">
             <div class="header-title">
               <h1 class="rtl">آپدیت های همیشگی</h1>
               <p class="rtl">
@@ -259,7 +275,9 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 right-side-header">
+          <div class="col-sm-12 col-md-6 right-side-header"
+          data-aos="fade-up"
+          data-aos-delay="900">
             <img src="dist/assest/img/path1.jpg" alt="" class="img-fluid" />
           </div>
         </div>
@@ -267,10 +285,14 @@
           class="row side-wrapper mb-5"
           style="display: flex !important; align-items: center !important"
         >
-          <div class="col-sm-12 col-md-6 right-side-header">
+          <div class="col-sm-12 col-md-6 right-side-header"
+          data-aos="fade-up"
+          data-aos-delay="400">
             <img src="dist/assest/img/path3.jpg" alt="" class="img-fluid" />
           </div>
-          <div class="col-sm-12 col-md-6 left-side-header">
+          <div class="col-sm-12 col-md-6 left-side-header"
+          data-aos="fade-up"
+          data-aos-delay="900">
             <div class="header-title">
               <h1 class="rtl">معرفی به بازار کار پس از دریافت تائیدیه فنی</h1>
               <p class="rtl">
@@ -284,7 +306,9 @@
           class="row side-wrapper"
           style="display: flex !important; align-items: center !important"
         >
-          <div class="col-sm-12 col-md-6 left-side-header">
+          <div class="col-sm-12 col-md-6 left-side-header"
+          data-aos="fade-up"
+          data-aos-delay="400">
             <div class="header-title">
               <h1 class="rtl">صرفه جویی در زمان، با تدریس اساتید مجرب</h1>
               <p class="rtl">
@@ -295,7 +319,9 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 right-side-header">
+          <div class="col-sm-12 col-md-6 right-side-header"
+          data-aos="fade-up"
+          data-aos-delay="900">
             <img src="dist/assest/img/path4.jpg" alt="" class="img-fluid" />
           </div>
         </div>
@@ -557,7 +583,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="dist/assest/js/bootstrap-min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'linear'
+      });
+    </script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
