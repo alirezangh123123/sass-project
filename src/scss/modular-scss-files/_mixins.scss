@@ -1,0 +1,42 @@
+// minxins
+@mixin default-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+@mixin zoom-slider {
+  transform: scale(1.04);
+}
+@mixin shadow-hover {
+  box-shadow: 0px 0px 0rem 5px rgba(0, 0, 0, 0.15) !important;
+}
+@mixin text-animate($slow-animate, $fast-animate: true) {
+  @if ($fast-animate) {
+    transition: all 0.4s ease;
+  } @else {
+    transition: all 0.8s ease;
+  }
+}
+@mixin card-text-stable {
+  text-overflow: ellipsis !important;
+  height: 55px !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+@mixin card-title-stable {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  height: 38px !important;
+}
+@mixin flex($flex: flex, $position-x: center, $position-y: center) {
+  display: $flex;
+  justify-content: $position-x;
+  align-items: $position-y;
+}
+@mixin margin-padding($top, $right, $bottom, $left, $margin: true) {
+  @if ($margin) {
+    margin: $top $right $bottom $left;
+  } @else {
+    padding: $top $right $bottom $left;
+  }
+}

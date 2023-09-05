@@ -1,56 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sass-project</title>
     <link
-    rel="stylesheet"
-    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- google font -->
-  <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
-<link rel="stylesheet" href="src/css/bootstrap-rtl.css">
-</head>
-<body>
-    
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="dist/assest/css/bootstrap-rtl-min.css" />
+    <link rel="stylesheet" href="dist/assest/css/style.css" />
+  </head>
+  <body>
+    <!--start nav-bar section  -->
+    <div class="container-fluid shadow">
+      <div class="container custom-nav-bar">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-10 custom-menu">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item px-1">
+                    <a class="nav-link" href="#"
+                      >خانه<span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item px-1">
+                    <a class="nav-link" href="#">دوره های آموزشی</a>
+                  </li>
+                  <li class="nav-item px-1">
+                    <a class="nav-link" href="#">تماس با ما</a>
+                  </li>
+                  <li class="nav-item px-1">
+                    <a class="nav-link" href="#">درباره ما</a>
+                  </li>
+                  <li class="nav-item d-md-none social-media">
+                    <span>
+                      <a href="#"><i class="fab fa-telegram px-1"></i></a>
+                      <a href="#"><i class="fab fa-instagram px-1"></i></a>
+                      <a href="#"><i class="fab fa-twitter px-1"></i></a>
+                      <a href="#"><i class="fas fa-rss px-1"></i></a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="col-sm-12 col-md-2 web-title mt-2">
+            <h6>کافه آموزش</h6>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- start header-section -->
+    <header class="mt-4">
+      <div class="container">
+        <div class="row side-wrapper">
+          <div class="col-sm-12 col-md-8 right-side-header">
+            <div class="gear-wrapper mt-3 d-flex justify-content-start">
+              <i class="fas fa-cog gear-1"></i>
+              <i class="fas fa-cog gear-2"></i>
+            </div>
 
-
+<<<<<<< HEAD
 <div class="container"></div>
 <div class="container-2"></div>
+=======
+            <img src="dist/assest/img/top-bg.jpg" alt="" class="img-fluid" />
+            <span class="sq-1"></span>
+            <span class="sq-2"></span>
+            <span class="sq-3"></span>
+          </div>
+          <div class="col-sm-12 col-md-4 left-side-header">
+            <div class="header-title">
+              <h1>وبسایت کافه آموزش</h1>
+              <p>جامع ترین وبسایت برنامه نویسی و طراحی وب</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- start-course-card-section -->
+    <main>
+      <div class="container card-course">
+        <div class="row d-flex justify-content-center align-items-center">
+          <a href="#" class="course-link">
+            <div
+              class="col-sm-12 col-md-4 d-flex justify-content-center mb-4 course-wrapper"
+            >
+              <div class="card w-75">
+                <div class="img-wrapper position-relative">
+                  <span
+                    class="badge badge-success mt-2 position-absolute text-white mr-2 p-1"
+                    >در حال برگزاری</span
+                  >
+                  <img
+                    class="card-img-top img-fluid"
+                    src="dist/assest/img/a.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
 
+                <div class="card-body">
+                  <h5 class="card-title rtl">دوره طراحی وب</h5>
+                  <p class="card-text rtl mb-3">
+                    دوره جامع طراحی وب بدون پیش نیاز
+                  </p>
+                  <div
+                    class="link-wrapper d-flex align-items-center justify-content-between"
+                  >
+                    <div class="course-time">
+                      <span class="material-symbols-outlined timer">
+                        av_timer
+                      </span>
+                      <span class="text-primary">14:00</span>
+                    </div>
+                    <a href="#" class="btn">شرکت در دوره</a>
+                  </div>
+                </div>
+              </div>
+            </div></a
+          >
+          <a href="#" class="course-link">
+            <div
+              class="col-sm-12 col-md-4 d-flex justify-content-center mb-4 course-wrapper"
+            >
+              <div class="card w-75">
+                <div class="img-wrapper position-relative">
+                  <span
+                    class="badge badge-secondary mt-2 position-absolute text-white mr-2 p-1"
+                    >پیش ثبت نام</span
+                  >
+                  <img
+                    class="card-img-top img-fluid"
+                    src="dist/assest/img/b.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
+>>>>>>> develop
 
+                <div class="card-body">
+                  <h5 class="card-title rtl">دوره جامع react-js</h5>
+                  <p class="card-text rtl mb-3">
+                    دوره جامع react-js به صورت پروژه محور
+                  </p>
+                  <div
+                    class="link-wrapper d-flex align-items-center justify-content-between"
+                  >
+                    <div class="course-time">
+                      <span class="material-symbols-outlined timer">
+                        av_timer
+                      </span>
+                      <span class="text-primary">37:00</span>
+                    </div>
+                    <a href="#" class="btn">شرکت در دوره</a>
+                  </div>
+                </div>
+              </div>
+            </div> </a
+          ><a href="#" class="course-link">
+            <div
+              class="col-sm-12 col-md-4 d-flex justify-content-center mb-4 course-wrapper"
+            >
+              <div class="card w-75">
+                <div class="img-wrapper position-relative">
+                  <span
+                    class="badge badge-success mt-2 position-absolute text-white mr-2 p-1"
+                    >به اتمام رسیده</span
+                  >
+                  <img
+                    class="card-img-top img-fluid"
+                    src="dist/assest/img/c.jpg"
+                    alt="Card image cap"
+                  />
+                </div>
 
+                <div class="card-body">
+                  <h5 class="card-title rtl">دوره clean-code</h5>
+                  <p class="card-text rtl mb-3">
+                    آموزش clean-code به صورت کاربردی
+                  </p>
+                  <div
+                    class="link-wrapper d-flex align-items-center justify-content-between"
+                  >
+                    <div class="course-time">
+                      <span class="material-symbols-outlined timer">
+                        av_timer
+                      </span>
+                      <span class="text-primary">7:00</span>
+                    </div>
+                    <a href="#" class="btn">شرکت در دوره</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- start-stracture-path-section -->
+    <section class="path">
+      <div class="container">
+        <div
+          class="row side-wrapper mb-5"
+          style="display: flex !important; align-items: center !important"
+        >
+          <div class="col-sm-12 col-md-6 right-side-header">
+            <img src="dist/assest/img/path1.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-12 col-md-6 left-side-header">
+            <div class="header-title">
+              <h1 class="rtl">صرفه جویی در زمان، با تدریس اساتید مجرب</h1>
+              <p class="rtl">
+                مدرسین ما، همگی افرادی هستند که تجربه کاری در بزرگترین شرکت های
+                حوزه فناوری ایران همانند دیجی کالا، نت برگ، پارسپک و ... را
+                دارند و می توانند با انتقال تجربه های ارزشمندشان، در زمان شما
+                صرفه جویی کنند!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row side-wrapper"
+          style="display: flex !important; align-items: center !important"
+        >
+          <div class="col-sm-12 col-md-6 left-side-header">
+            <div class="header-title">
+              <h1 class="rtl">آپدیت های همیشگی</h1>
+              <p class="rtl">
+                آپدیت های همیشگی ویژه دوره های ما در صورتی که در دوره های ما به
+                صورت کامل ثبت نام نمایید، آپدیت های این دوره ها را به مدت ۶ ماه
+                به صورت رایگان دریافت خواهید کرد.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 right-side-header">
+            <img src="dist/assest/img/path1.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div
+          class="row side-wrapper mb-5"
+          style="display: flex !important; align-items: center !important"
+        >
+          <div class="col-sm-12 col-md-6 right-side-header">
+            <img src="dist/assest/img/path3.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-sm-12 col-md-6 left-side-header">
+            <div class="header-title">
+              <h1 class="rtl">معرفی به بازار کار پس از دریافت تائیدیه فنی</h1>
+              <p class="rtl">
+                ما در انتهای دوره های دانشجویان تائید شده را برای اشتغال به کار
+                به شرکت های مطرح حوزه فناوری معرفی خواهیم کرد.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row side-wrapper"
+          style="display: flex !important; align-items: center !important"
+        >
+          <div class="col-sm-12 col-md-6 left-side-header">
+            <div class="header-title">
+              <h1 class="rtl">صرفه جویی در زمان، با تدریس اساتید مجرب</h1>
+              <p class="rtl">
+                مدرسین ما، همگی افرادی هستند که تجربه کاری در بزرگترین شرکت های
+                حوزه فناوری ایران همانند دیجی کالا، نت برگ، پارسپک و ... را
+                دارند و می توانند با انتقال تجربه های ارزشمندشان، در زمان شما
+                صرفه جویی کنند!
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 right-side-header">
+            <img src="dist/assest/img/path4.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start-educational-articles-stracture -->
+    <section class="article-sec">
+      <div class="container">
+        <div class="article-title rtl" style="padding: 14px 0px">
+          <span
+            class="header-title"
+            style="
+              border-right: 3px solid red !important;
+              padding-right: 9px !important;
+            "
+            >مقالات آموزشی</span
+          >
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 article-wrapper">
+            <div class="card d-flex flex-row">
+              <div class="custom-card-header w-25">
+                <div class="img-wrapper h-100 position-relative">
+                  <img
+                    class="card-img-top h-100"
+                    src="dist/assest/img/a1.png"
+                    alt="Card image cap"
+                  />
+                </div>
+              </div>
+              <div class="card-body w-75">
+                <h5 class="card-title rtl">آموزش ایجاد افکت با AOS</h5>
+                <div
+                  class="author-wrapper d-flex justify-content-between align-items-center"
+                >
+                  <span class="text-muted author-info"
+                    >نویسنده:علیرضا نقویان</span
+                  >
+                  <span class="text-muted author-info"
+                    >تاریخ انتشار:۱۲شهریور</span
+                  >
+                </div>
 
+                <p class="card-text rtl mb-3">
+                  شما می‌توانید با استفاده از CSS و HTML افکت‌ها و انیمیشن‌های
+                  چشمگیری را ایجاد کنید. اگرچه برای ایجاد انیمیشن‌های پیچیده
+                  ممکن است به جاوا اسکریپت هم نیاز داشته باشید.
+                </p>
+                <div
+                  class="link-wrapper d-flex align-items-center justify-content-between"
+                >
+                  <div class="course-time">
+                    <span class="material-symbols-outlined timer">
+                      av_timer
+                    </span>
+                    <span class="text-primary">14:00</span>
+                  </div>
+                  <a href="#" class="btn">ورود به صفحه</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 article-wrapper">
+            <div class="card d-flex flex-row">
+              <div class="custom-card-header w-25">
+                <div class="img-wrapper h-100 position-relative">
+                  <img
+                    class="card-img-top h-100"
+                    src="dist/assest/img/a1.png"
+                    alt="Card image cap"
+                  />
+                </div>
+              </div>
+              <div class="card-body w-75">
+                <h5 class="card-title rtl">آموزش ایجاد افکت با AOS</h5>
+                <div
+                  class="author-wrapper d-flex justify-content-between align-items-center"
+                >
+                  <span class="text-muted author-info"
+                    >نویسنده:علیرضا نقویان</span
+                  >
+                  <span class="text-muted author-info"
+                    >تاریخ انتشار:۱۲شهریور</span
+                  >
+                </div>
 
+                <p class="card-text rtl mb-3">
+                  شما می‌توانید با استفاده از CSS و HTML افکت‌ها و انیمیشن‌های
+                  چشمگیری را ایجاد کنید. اگرچه برای ایجاد انیمیشن‌های پیچیده
+                  ممکن است به جاوا اسکریپت هم نیاز داشته باشید.
+                </p>
+                <div
+                  class="link-wrapper d-flex align-items-center justify-content-between"
+                >
+                  <div class="course-time">
+                    <span class="material-symbols-outlined timer">
+                      av_timer
+                    </span>
+                    <span class="text-primary">14:00</span>
+                  </div>
+                  <a href="#" class="btn">ورود به صفحه</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 article-wrapper">
+            <div class="card d-flex flex-row">
+              <div class="custom-card-header w-25">
+                <div class="img-wrapper h-100 position-relative">
+                  <img
+                    class="card-img-top h-100"
+                    src="dist/assest/img/a1.png"
+                    alt="Card image cap"
+                  />
+                </div>
+              </div>
+              <div class="card-body w-75">
+                <h5 class="card-title rtl">آموزش ایجاد افکت با AOS</h5>
+                <div
+                  class="author-wrapper d-flex justify-content-between align-items-center"
+                >
+                  <span class="text-muted author-info"
+                    >نویسنده:علیرضا نقویان</span
+                  >
+                  <span class="text-muted author-info"
+                    >تاریخ انتشار:۱۲شهریور</span
+                  >
+                </div>
 
+                <p class="card-text rtl mb-3">
+                  شما می‌توانید با استفاده از CSS و HTML افکت‌ها و انیمیشن‌های
+                  چشمگیری را ایجاد کنید. اگرچه برای ایجاد انیمیشن‌های پیچیده
+                  ممکن است به جاوا اسکریپت هم نیاز داشته باشید.
+                </p>
+                <div
+                  class="link-wrapper d-flex align-items-center justify-content-between"
+                >
+                  <div class="course-time">
+                    <span class="material-symbols-outlined timer">
+                      av_timer
+                    </span>
+                    <span class="text-primary">14:00</span>
+                  </div>
+                  <a href="#" class="btn">ورود به صفحه</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 article-wrapper">
+            <div class="card d-flex flex-row">
+              <div class="custom-card-header w-25">
+                <div class="img-wrapper h-100 position-relative">
+                  <img
+                    class="card-img-top h-100"
+                    src="dist/assest/img/a1.png"
+                    alt="Card image cap"
+                  />
+                </div>
+              </div>
+              <div class="card-body w-75">
+                <h5 class="card-title rtl">آموزش ایجاد افکت با AOS</h5>
+                <div
+                  class="author-wrapper d-flex justify-content-between align-items-center"
+                >
+                  <span class="text-muted author-info"
+                    >نویسنده:علیرضا نقویان</span
+                  >
+                  <span class="text-muted author-info"
+                    >تاریخ انتشار:۱۲شهریور</span
+                  >
+                </div>
+
+                <p class="card-text rtl mb-3">
+                  شما می‌توانید با استفاده از CSS و HTML افکت‌ها و انیمیشن‌های
+                  چشمگیری را ایجاد کنید. اگرچه برای ایجاد انیمیشن‌های پیچیده
+                  ممکن است به جاوا اسکریپت هم نیاز داشته باشید.
+                </p>
+                <div
+                  class="link-wrapper d-flex align-items-center justify-content-between"
+                >
+                  <div class="course-time">
+                    <span class="material-symbols-outlined timer">
+                      av_timer
+                    </span>
+                    <span class="text-primary">14:00</span>
+                  </div>
+                  <a href="#" class="btn">ورود به صفحه</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start-footer-section-stracture -->
+    <footer class="footer-sec">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 footer-sec-wrapper">
+              <nav class="nav flex-column rtl">
+                <a href="#" class="nav-title mb-2">ارتباط باما</a>
+                <a class="nav-link footer-address" href="#"
+                  >تهران-خیابان انقلاب-کوچه فجر-پلاک۲۲</a
+                >
+                <a class="nav-link footer-phone" href="#">090222007089</a>
+                <a class="nav-link footer-email" href="#"
+                  >alireza20002485@gmail.com</a
+                >
+                <a class="nav-link footer-ins" href="#">alireza20002485</a>
+              </nav>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 footer-sec-wrapper">
+              <nav class="nav flex-column rtl">
+                <a href="#" class="nav-title">میانبر</a>
+                <a class="nav-link footer-main" href="#">صفحه اصلی</a>
+                <a class="nav-link footer-contact-us" href="#">تماس با ما</a>
+                <a class="nav-link footer-about-us" href="#">درباره ما</a>
+                <a class="nav-link footer-courses" href="#">دوره های آموزشی</a>
+              </nav>
+            </div>
+            <div class="col-sm-12-col-md-12 col-lg-4 sub-wrapper">
+              <div class="sub-news">
+                <h4>برای عضویت در خبرنامه ایمیل معتبر وارد نمایید</h4>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn bg-primary text-white rounded-0"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    اشتراک
+                  </button>
+                </div>
+                <input
+                  type="email"
+                  class="form-control rounded-0"
+                  placeholder="ایمیل معتبر..."
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
 
     <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/assest/js/bootstrap-min.js"></script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script src="src/js/bootstrap.js"></script>
-  <script src="src/js/main.js"></script>
-</body>
+    <script src="src/js/main.js"></script>
+  </body>
 </html>

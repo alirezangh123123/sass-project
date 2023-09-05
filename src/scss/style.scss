@@ -1,0 +1,46 @@
+@import 'modular-scss-files/vars';
+@import'modular-scss-files/mixins';
+@import'modular-scss-files/nav-bar';
+@import'modular-scss-files/header';
+@import'modular-scss-files/course';
+@import'modular-scss-files/path';
+@import'modular-scss-files/article';
+@import'modular-scss-files/footer';
+
+
+@font-face {
+  font-family: $font-family;
+  src: url(../../dist/assest/font/Vazir-Medium.woff) format("woff"),
+    url(../../dist/assest/font/Vazir-Medium.eot) format("eot"),
+    url(../font/Vazir-Medium.woff2) format("woff2");
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+* {
+  font-family: $font-family;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-family;
+  // background-color: $light-color !important;
+  overflow-x: hidden !important;
+}
+
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  color: $dark-color;
+}
+
+
+
+
+

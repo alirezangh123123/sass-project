@@ -1,0 +1,83 @@
+// start-footer-style
+footer.footer-sec {
+  background-color: $dark-color;
+  @include default-shadow();
+  margin-top: 100px !important;
+  .container-fluid {
+    .container {
+      .row {
+        .footer-sec-wrapper {
+          margin-top: 50px;
+          nav {
+            .nav-link {
+              color: $white-color;
+              font-size: $default-font-size-tablet-nav;
+              @include text-animate(false);
+              &:hover {
+                color: $yellow-color;
+              }
+            }
+            .nav-title {
+              margin-right: 17px !important;
+              color: $white-shade;
+              font-size: $default-font-size-tablet-nav;
+            }
+            // special-icno
+            .footer-address {
+              &::before {
+                content: "\f3c5";
+                font-family: $f-icon;
+                padding-left: 4px !important;
+                vertical-align: -2px !important;
+              }
+            }
+            .footer-phone {
+              &::after {
+                content: "\f095";
+                font-family: $f-icon;
+                padding-left: 4px !important;
+                vertical-align: -1px !important;
+              }
+            }
+            .footer-email {
+              &::after {
+                content: "\f2b6";
+                font-family: $f-icon;
+                padding-left: 4px !important;
+                vertical-align: 1px !important;
+              }
+            }
+            .footer-ins {
+              &::after {
+                content: "\f16d";
+                font-family: $f-icon;
+                padding-left: 4px !important;
+                vertical-align: 1px !important;
+              }
+            }
+          }
+        }
+        .sub-wrapper {
+          margin-top: 50px !important;
+          div.sub-news {
+            margin-top: 23px;
+            h4 {
+              color: $yellow-color !important;
+              font-size: $default-font-size-h6 !important;
+              text-align: center !important;
+              margin-bottom: 29px !important;
+            }
+          }
+          .input-group {
+            input {
+              &:focus {
+                box-shadow: none;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
